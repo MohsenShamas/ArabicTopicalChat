@@ -1,9 +1,3 @@
-# import csv
-# import pandas
-# from tqdm import tqdm
-
-URL_PATH = "https://raw.githubusercontent.com/MohsenShamas/TopicalChatDataset/main/translated_dataset/preprocessed.csv"
-
 # coding=utf-8
 # Copyright 2020 The HuggingFace Datasets Authors.
 #
