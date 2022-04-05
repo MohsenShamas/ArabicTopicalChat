@@ -68,7 +68,7 @@ class ArabicTopicalChat(datasets.GeneratorBasedBuilder):
         ]
 
     def _generate_examples(self, filepath):
-        with open("arabic-empathetic-conversations.csv",'r',encoding='utf-8') as f:
+        with open("preprocessed.csv",'r',encoding='utf-8') as f:
             csv_reader = csv.reader(f)
             for i , row in enumerate(csv_reader):
                 if i==0:
