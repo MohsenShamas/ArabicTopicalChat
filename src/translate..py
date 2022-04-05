@@ -10,8 +10,8 @@ with open("translated_dataset/translated.csv", "w", encoding="utf-8", newline=''
     data = pandas.read_csv("dataset/topical_chat.csv")
     header = data.columns.tolist()
     rows = data.values
-    # count = 0
-    # csv_writer.writerow(header)
+    count = 0
+    csv_writer.writerow(header)
     for row in tqdm(rows):
         if row[1] == " ": 
             csv_writer.writerow([row[0], " ", row[2]])
