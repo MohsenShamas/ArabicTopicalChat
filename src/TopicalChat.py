@@ -28,7 +28,7 @@ The TopicalChat dataset contains ~188K samples of open domain utterances and res
 "sentiment" refers to the emotion in the utterance
 """
 
-_URL = "https://raw.githubusercontent.com/MohsenShamas/ArabicTopicalChat/main/dataset/topical_chat.csv"
+_URL = "https://raw.githubusercontent.com/MohsenShamas/ArabicTopicalChat/main/dataset/preprocessed.csv"
 
 
 class TopicalChat(datasets.GeneratorBasedBuilder):
@@ -65,7 +65,7 @@ class TopicalChat(datasets.GeneratorBasedBuilder):
         ]
 
     def _generate_examples(self, filepath):
-        with open("preprocessed.csv", 'r', encoding='utf-8') as f:
+        with open("preprocessed_dataset.csv", 'r', encoding='utf-8') as f:
             csv_reader = csv.reader(f)
             for i, row in enumerate(csv_reader):
                 if i == 0:
