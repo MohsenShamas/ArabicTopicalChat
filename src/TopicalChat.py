@@ -28,7 +28,7 @@ The TopicalChat dataset contains ~188K samples of open domain utterances and res
 "sentiment" refers to the emotion in the utterance
 """
 
-_URL = "https://raw.githubusercontent.com/MohsenShamas/ArabicTopicalChat/main/dataset/preprocessed.csv"
+_URL = "https://raw.githubusercontent.com/MohsenShamas/ArabicTopicalChat/main/dataset/preprocessed_dataset.csv"
 
 
 class TopicalChat(datasets.GeneratorBasedBuilder):
